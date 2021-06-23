@@ -3,8 +3,9 @@ package com.example.firebaseklsb.database;
 import java.io.Serializable;
 
 public class Teman implements Serializable {
-    private String nama;
-    private String telpon;
+    String kode;
+    String nama;
+    String telpon;
 
     public Teman() {
     }
@@ -26,6 +27,13 @@ public class Teman implements Serializable {
         this.telpon = telpon;
     }
 
+    public String getKode() {
+        return kode;
+    }
+
+    public void setKode(String kode) {
+        this.kode = kode;
+    }
 
     @Override
     public String toString() {
